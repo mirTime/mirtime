@@ -35,9 +35,9 @@ optional arguments:
   
 ```
 
-**MicroRNA/mRNA Files**, which are included in microRNA File Directory or mRNA File Directory given with `-i/--mirna` or `-m/--mrna` option must be formatted as below. The file name should be `repN_tpM.tsv`, where N and M must be int. N and M represent the Nth replication and the time point M of the data file for each. mRNA ID must be refseq ID, and miRNA ID must be miRBase ID. `mirtime` will simply ignore the header by skipping a single line.
+**MicroRNA/mRNA Files**, which are included in microRNA File Directory or mRNA File Directory given with `-i/--mirna` or `-m/--mrna` option must be formatted as below. The file name should be `repN_tpM.tsv`, where N and M should be int type and float type for each. N and M represent the Nth replication and the time point M of the data file. mRNA ID must be refseq ID, and miRNA ID must be miRBase ID. `mirtime` will simply ignore the header by skipping a single line.
 
-%File name: rep0_tp1.tsv:
+microRNA File rep0_tp1.tsv in MIRNAFILEDIR:
 
     miRNA_ID	expression_value               # Header
     miRNA1	10
@@ -45,7 +45,7 @@ optional arguments:
     miRNA3	30
     ...
 
-%File name: rep2_tp3.tsv:
+mRNA File rep2_tp3.tsv in MRNAFILEDIR:
 
     mRNA_ID	expression_value               # Header
     mRNA1	10
