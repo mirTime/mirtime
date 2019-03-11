@@ -1,12 +1,16 @@
 from __future__ import print_function
-__version__ = '0.1.0'
 
-import mirtime.util as util
-import mirtime.firstfilter as ffilter
-import mirtime.gplearning as gplearn
+import os
+import sys
+
 import mirtime.clustering as clustering
 import mirtime.correlation as corr
-import sys, os
+import mirtime.firstfilter as ffilter
+import mirtime.gplearning as gplearn
+import mirtime.util as util
+
+__version__ = '0.1.0'
+
 
 cwd = os.getcwd()
 tmpDir = cwd + '/../../result/tmp/'

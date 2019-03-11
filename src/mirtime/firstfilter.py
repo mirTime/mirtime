@@ -1,7 +1,8 @@
 
-import os, re, subprocess
+import os
+import re
+import subprocess
 
-	
 cwd = os.getcwd()
 tmpDir = cwd + '/../../result/tmp/'
 logDir = cwd + '/../../result/log/'

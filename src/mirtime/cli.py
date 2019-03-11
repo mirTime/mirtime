@@ -14,8 +14,9 @@ Why does this file exist, and why not put this in __main__?
 
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
-import mirtime
 import argparse
+
+import mirtime
 
 parser = argparse.ArgumentParser(description='MicroRNA target prediction using time-series data.')
 parser.add_argument('-i', '--mirna', required=True, help='miRNA expression profile file directory')
@@ -23,10 +24,10 @@ parser.add_argument('-m', '--mrna', required=True, help='mRNA expression profile
 parser.add_argument('-l', '--mirlist', required=True, help='File path of miRNA of interests')
 parser.add_argument('-t', '--seqtype', required=True, help='Sequencing type of expression profiles')
 parser.add_argument('-s', '--size', required=True, help='Number of targets per miRNA')
-parser.add_argument('-o', '--output', required=True, help='Output file name')
+parser.add_argument('-o', '--output', required=True, help='Output file tag')
 parser.add_argument('-p', '--tepath', required=True, help='Path where TargetExpress.pl is located')
 
 
 def main(args=None):
 	args = parser.parse_args(args=args)
-	result = mirtime.run_mirtime(args.mirna, args.mrna, args.mirlist, args.seqtype, args.size, args.output, args.tepath)
+	mirtime.run_mirtime(args.mirna, args.mrna, args.mirlist, args.seqtype, args.size, args.output, args.tepath)

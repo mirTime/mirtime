@@ -13,6 +13,11 @@ include CHANGELOG.rst
 include CONTRIBUTING.rst
 include LICENSE
 include README.rst
+include *.md
+
+recursive-include database *.geneSymbol
+recursive-include database *.pairList
+recursive-include database *.tsv
 
 include tox.ini .travis.yml appveyor.yml
 

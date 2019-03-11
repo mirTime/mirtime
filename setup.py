@@ -4,7 +4,6 @@ from __future__ import absolute_import
 from __future__ import print_function
 
 import io
-
 import re
 from glob import glob
 from os.path import basename
@@ -35,7 +34,7 @@ setup(
     ),
     author='Hyejin Kang',
     author_email='gpwls23@snu.ac.kr',
-    url='https://github.com/gpwls23/python-mirtime',
+    url='https://github.com/gpwls23/mirtime',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -65,9 +64,9 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls = {
-        'Documentation': 'https://python-mirtime.readthedocs.io/',
-        'Changelog': 'https://python-mirtime.readthedocs.io/en/latest/changelog.html',
-        'Issue Tracker': 'https://github.com/gpwls23/python-mirtime/issues',
+        'Documentation': 'https://mirtime.readthedocs.io/',
+        'Changelog': 'https://mirtime.readthedocs.io/en/latest/changelog.html',
+        'Issue Tracker': 'https://github.com/gpwls23/mirtime/issues',
     },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',

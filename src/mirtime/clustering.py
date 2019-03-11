@@ -1,6 +1,7 @@
-from spherecluster import SphericalKMeans as skmeans
-import numpy as np
 import os
+
+import numpy as np
+from spherecluster import SphericalKMeans as skmeans
 
 cwd = os.getcwd()
 tmpDir = cwd + '/../../result/tmp/'

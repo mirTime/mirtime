@@ -1,5 +1,7 @@
 from __future__ import print_function
-import re, os
+
+import os
+import re
 
 cwd = os.getcwd()
 tmpDir = cwd + '/../../result/tmp/'
@@ -10,8 +12,6 @@ def parse_expression_profiles(input_file_dir):
 	Attribute:
 		input_file_dir (str): directory path which contains expression level files.
 	"""
-
-
 
 	filePattern = re.compile("rep(\d+)_tp(.+)\.tsv")
 	valDict = {}

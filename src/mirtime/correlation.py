@@ -1,5 +1,7 @@
-import numpy as np
 import math
+
+import numpy as np
+
 
 def weighted_corr(miRNAvec, mRNAvec, miRNAweight, mRNAweight):
 	miRNAmean = np.average(miRNAvec, weights = miRNAweight)

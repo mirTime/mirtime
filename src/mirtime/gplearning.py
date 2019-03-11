@@ -1,7 +1,12 @@
-from sklearn.gaussian_process import GaussianProcessRegressor
-from sklearn.gaussian_process.kernels import Matern, WhiteKernel, ConstantKernel as C
-import os, scipy, math
+import math
+import os
+
 import numpy as np
+import scipy
+from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.gaussian_process.kernels import ConstantKernel as C
+from sklearn.gaussian_process.kernels import Matern
+from sklearn.gaussian_process.kernels import WhiteKernel
 
 cwd = os.getcwd()
 tmpDir = cwd + '/../../result/tmp/'
