@@ -1,7 +1,7 @@
 # mirTime
 
 A new pipeline, mirTime, that predicts microRNA targets by integrating sequence features and time-series expression
-profiles in a specific experimental condition.
+profiles in a specific experimental condition using Gaussian process model and spherical vector clustering.
 
 ## Installation
 
